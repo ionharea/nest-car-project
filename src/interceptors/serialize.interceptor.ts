@@ -4,8 +4,8 @@ import {
   NestInterceptor,
   UseInterceptors,
 } from '@nestjs/common';
-import { map, Observable } from 'rxjs';
 import { plainToClass } from 'class-transformer';
+import { map, Observable } from 'rxjs';
 
 interface ClassConstructor {
   new (...args: any[]): Record<never, never>;
